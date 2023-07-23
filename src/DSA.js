@@ -1,16 +1,15 @@
 import './App.css';
 import images from './images.jpeg'
 import { useState } from 'react';
-function Home() {
+function DSA() {
   const[open,setOpen]=useState(true);
   return (  
   <div className=' flex'>
-    <div className={`${open ? " w-10" : "w-60" }  duration-500 h-screen bg-gray-900 relative  `}>
-            <div className={`${open && "hidden"} ml-10 mt-8 font-bold text-white text-2xl`}> Menu</div>
-
-            <a href='Home.js' className='flex  bg-gray-900 mt-12 cursor-pointer hover:bg-gray-400 mb-5'>
+    <div className={`${open ? " w-0" : " w-72" } duration-300 h-screen bg-gray-900 relative  `}>
+            <div className={`${open && "hidden"} ml-12 mt-10 font-bold text-white text-2xl`}> Menu</div>
+            <a href='Home.js' className='flex  bg-gray-900  mt-10 cursor-pointer hover:bg-gray-400 mb-5'>
               <img src='https://cdn-icons-png.flaticon.com/128/5973/5973800.png' alt='77'className='h-10 w-8 pt-2'/>
-              <div className={` p-1 m-2 h-8 w-60 content-center text-gray-300 text-sm flex items-center gap-x-4 
+              <div className={` p-1 m-2 h-8 w-32 content-center text-gray-300 text-sm flex items-center gap-x-4 
               ${open && "hidden"}`}>
                     Home
                </div>
@@ -61,7 +60,7 @@ function Home() {
           </a>
 
 
-          <div className='flex cursor-pointer hover:bg-gray-400 bg-gray-900  mb-5'>
+          <div className='flex  cursor-pointer hover:bg-gray-400 bg-gray-900  mb-5'>
               <img src='https://cdn-icons-png.flaticon.com/128/7407/7407709.png' alt='77' className='h-10 w-9 pt-2 pl-0.5'/>
               <div className={`h-8 w-32 p-1 m-2 mt-1 text-gray-300 text-sm flex items-center gap-x-4 
               ${open && "hidden"}`}>
@@ -73,26 +72,21 @@ function Home() {
     {/* TopNavBar */}
       <div className='  text-2xl bg-indigo-400 h-screen w-screen  ' >
        <div className=' bg-indigo-400 flex cursor-pointer h-0' onClick={()=>setOpen(!open)} >
-            <img src={images} className={`items-start h-6 rounded-full w-6  mt-5 bg-indigo-400  ${ !open && "rotate-90"}`} />
+            <img src={images} className={`items-start h-6 rounded-full w-6  mt-9 bg-indigo-400  ${ !open && "rotate-90"}`} />
       </div>
-      <div class=" bg-gray-900  flex  items-center  p-4">
-            <ul class="font-medium flex space-x-20  mr-0 p-4 pl-20  border-gray-100  ">
+      <div class=" bg-gray-900  flex flex-wrap items-center justify-between mx-auto p-4">
+            <ul class="font-medium flex space-x-60 ml-20 p-4 pl-10  border-gray-100  ">
                   <li>
-                  <a href="#" class=" text-blue-500 hover:text-white" >About</a>
+                  <a href="#" class=" text-blue-500" >Home</a>
                   </li>
                   <li>
-                  <a href="#" class=" text-blue-500 hover:text-white" >Contact</a>
+                  <a href="#" class=" text-blue-500" >Home</a>
                   </li>
                   <li>
-                  <a href="#" class=" text-blue-500 hover:text-white" >Login</a>
+                  <a href="#" class=" text-blue-500" >Home</a>
                   </li>
                   <li>
-                  <a href="#" class=" text-blue-500 hover:text-white" >SignUp</a>
-                  </li>
-                  <li className='flex absolute absolute right-0'>
-                  <button className=' bg-blue-600 rounded-md pt-1 pl-5 pr-5 pb-2 mr-10 hover:bg-slate-100'> Login</button>    
-                  <button className=' bg-blue-600 rounded-md pt-1 pl-5 pr-5 pb-2 mr-10 hover:bg-slate-100'> SignUp</button>    
-
+                  <a href="#" class=" text-blue-500" >Home</a>
                   </li>
             </ul>
             </div>
@@ -103,4 +97,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default DSA;
