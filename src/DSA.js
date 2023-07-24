@@ -3,6 +3,7 @@ import images from './images.jpeg'
 import { useState } from 'react';
 function DSA() {
   const[open,setOpen]=useState(true);
+  const[dropdown,setdropdown]=useState(false);
   return (  
   <div className=' flex'>
     <div className={`${open ? " w-12" : " w-64" }  duration-500 h-screen bg-gray-900 relative  `}>

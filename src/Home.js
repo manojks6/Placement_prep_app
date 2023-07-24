@@ -3,7 +3,8 @@ import images from './images.jpeg'
 import { useState } from 'react';
 function Home() {
   const[open,setOpen]=useState(true);
-  return (  
+  const [dropdown, setDropdown] = useState(false);
+return (  
   <div className=' flex'>
     <div className={`${open ? " w-12" : " w-64" }  duration-500 h-screen bg-gray-900 relative  `}>
     <div className={`${open && "hidden"} ml-12 mt-8 -mb-16 font-bold text-white text-2xl`}> Menu</div>
@@ -84,15 +85,24 @@ function Home() {
                   <a href="#" class=" text-teal-500 hover:text-white" >Contact</a>
                   </li>
                   <li>
-                  <a href="#" class=" text-teal-500 hover:text-white" >Login</a>
+                  <a href="#" class=" text-teal-500 hover:text-white" >Others</a>
                   </li>
                   <li>
-                  <a href="#" class=" text-teal-500 hover:text-white" >SignUp</a>
+                  <a className={` text-teal-500 hover:text-white cursor-pointer `} onMouseEnter={()=>setDropdown(true)} onMouseLeave={()=>{setDropdown(false)}}>Dropdown</a>
+                        { dropdown ? (
+                        <ul className=" absolute bg-slate-500 h-max w-24 mt-0 ml-16 text-center" onMouseEnter={()=>setDropdown(true) } onMouseLeave={()=>{setDropdown(false)}}>
+                              <li className=" hover:bg-slate-400">
+                              <button>hello</button>
+                              </li>
+                              <li className="hover:bg-slate-400">
+                              <button>dajhg</button>
+                              </li>
+                        </ul>
+                        ): null}
                   </li>
                   <li className='flex absolute  right-0'>
                   <button className=' bg-teal-500 rounded-md pt-1 pl-5 pr-5 pb-2 mr-10 hover:bg-slate-100'> Login</button>    
                   <button className=' bg-teal-500 rounded-md pt-1 pl-5 pr-5 pb-2 mr-10 hover:bg-slate-100'> SignUp</button>    
-
                   </li>
             </ul>
             </div>
