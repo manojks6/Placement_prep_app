@@ -77,16 +77,17 @@ return (
       <div class=" bg-gray-900  flex  items-center  p-4">
             <ul class="font-medium flex space-x-20  mr-0 p-4 pl-20  border-gray-100  ">
                   <li>
-                  <a href="#" class=" text-teal-500 hover:text-white" >hgyvyu</a>
+                  <a href="#" class=" text-teal-500 hover:text-white" >Topics</a>
                   </li>
                   <li>
-                  <a href="#" class=" text-teal-500 hover:text-white" >Contact</a>
+                  <a href="#" class=" text-teal-500 hover:text-white" >Mock tests</a>
                   </li>
                   <li>
-                  <a href="#" class=" text-teal-500 hover:text-white" >Others</a>
+                  <a href="#" class=" text-teal-500 hover:text-white" >Previous year papers</a>
                   </li>
             </ul>
             </div>
+            <p className=' text-center mt-6'> The page is under development</p>
       </div>
       
 

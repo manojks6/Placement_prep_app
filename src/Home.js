@@ -83,17 +83,17 @@ return (
                   <a href="#" class=" text-teal-500 hover:text-white" >Contact</a>
                   </li>
                   <li>
-                  <a href="#" class=" text-teal-500 hover:text-white" >Others</a>
+                  <a href="#" class=" text-teal-500 hover:text-white" >Help</a>
                   </li>
                   <li>
-                  <a className={` text-teal-500 hover:text-white cursor-pointer `} onMouseEnter={()=>setDropdown(true)} onMouseLeave={()=>{setDropdown(false)}}>Dropdown</a>
+                  <a className={` text-teal-500 hover:text-white cursor-pointer `} onMouseEnter={()=>setDropdown(true)} onMouseLeave={()=>{setDropdown(false)}}>More</a>
                         { dropdown ? (
                         <ul className=" absolute bg-slate-500 h-max w-24 mt-0 ml-16 text-center" onMouseEnter={()=>setDropdown(true) } onMouseLeave={()=>{setDropdown(false)}}>
                               <li className=" hover:bg-slate-400">
-                              <button>hello</button>
+                              <p> Others</p>
                               </li>
                               <li className="hover:bg-slate-400">
-                              <button>dajhg</button>
+                              <p>Message</p>    
                               </li>
                         </ul>
                         ): null}
