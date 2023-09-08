@@ -1,3 +1,12 @@
+#Preview
+
+
+
+https://github.com/manojks6/Placement_prep_app/assets/118463406/eb10390f-fba3-4315-8cbf-1d26a8ca09be
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
