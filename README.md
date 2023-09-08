@@ -1,5 +1,7 @@
 #Preview
+![Screenshot (242)](https://github.com/manojks6/Placement_prep_app/assets/118463406/0640cbc5-3e97-4d88-be33-97b1c268f8d3)
 
+![Screenshot (241)](https://github.com/manojks6/Placement_prep_app/assets/118463406/d845af6c-dd46-4115-bb4e-2ae8386b8b51)
 
 
 https://github.com/manojks6/Placement_prep_app/assets/118463406/eb10390f-fba3-4315-8cbf-1d26a8ca09be
